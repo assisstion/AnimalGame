@@ -3,7 +3,7 @@ $var = 'none';
 
 try
 {
-	$pdo = new PDO('mysql:host=localhost;dbname=ofeng_markusfeng_animal', 'ofeng_animaluser', 'm8206170366440404m');
+	$pdo = new PDO('mysql:host=localhost;dbname=ofeng_markusfeng_animal', 'ofeng_animaluser', 'PASS');
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	
 	$n = $pdo->query('SELECT count(*) ' .
