@@ -22,7 +22,7 @@ if(!((isset($_POST['value'])) && (isset($_POST['hash'])) && (isset($_POST['old_h
 
 try
 {
-	$pdo = new PDO('mysql:host=localhost;dbname=ofeng_markusfeng_animal', 'ofeng_animaluser', 'm8206170366440404m');
+	$pdo = new PDO('mysql:host=localhost;dbname=ofeng_markusfeng_animal', 'ofeng_animaluser', 'PASS');
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$result = $pdo->query('SELECT hash FROM meta');
 
